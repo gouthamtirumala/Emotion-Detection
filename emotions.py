@@ -49,5 +49,3 @@ if text:
         elif op == 5:
             st.write("SURPRISE")
             st.image(os.path.join(current_dir, "surprize_emoji.png"))
-
-This should help resolve the issue with loading image files in your Streamlit app.
