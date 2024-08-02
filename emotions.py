@@ -5,13 +5,13 @@ import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 
 # Load the pre-trained model
-model = pickle.load(open(r"C:\Users\HP\AI ELITE 20\ML WEEKEND PROJECTS\nb_emotion.pkl", 'rb'))
+model = pickle.load(open(r"nb_emotion.pkl", 'rb'))
 
 # Load the CountVectorizer used for training
-with open(r"C:\Users\HP\AI ELITE 20\bow_emotion.pkl", 'rb') as f:
+with open(r"bow_emotion.pkl", 'rb') as f:
     bow = pickle.load(f)
 
-st.image(r"C:\Users\HP\OneDrive\Pictures\inoopng.png")
+st.image(r"inoopng.png")
 st.title("Emotion Analysis System")
 
 # Input email text
@@ -31,20 +31,20 @@ if text:
         
         if op == 0 :
             st.write("SAD")
-            st.image(r"C:\Users\HP\Downloads\sad_emoji.png")
+            st.image(r"sad_emoji.png")
         elif op == 1 :
             st.write("JOY")
-            st.image(r"C:\Users\HP\Downloads\joy_emoji.png")
+            st.image(r"joy_emoji.png")
         elif op == 2 :
             st.write("LOVE")
-            st.image(r"C:\Users\HP\Downloads\love_emoji.png")
+            st.image(r"love_emoji.png")
         elif op == 3 :
             st.write("ANGER")
-            st.image(r"C:\Users\HP\Downloads\Angry_emoji.png")
+            st.image(r"Angry_emoji.png")
         elif op == 4 :
             st.write("FEAR")
-            st.image(r"C:\Users\HP\Downloads\fear_emoji.png")
+            st.image(r"fear_emoji.png")
         elif op == 5 :
             st.write("SURPRISE")
-            st.image(r"C:\Users\HP\Downloads\surprize_emoji.png")
+            st.image(r"surprize_emoji.png")
             
